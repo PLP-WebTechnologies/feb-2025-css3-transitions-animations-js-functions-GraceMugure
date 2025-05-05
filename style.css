@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+
+#hoverBtn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+#hoverBtn:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+  }
+
+#fadeInImage {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+#fadeInImage.visible {
+    opacity: 1;
+  }
+  
+  
+#clickBtn {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: bounce 0.5s ease-in-out infinite;
+  }
+  
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
